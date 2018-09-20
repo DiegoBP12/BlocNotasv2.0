@@ -87,7 +87,7 @@ public class ModelBlocnotas {
                 File file = new File(path);
                 FileWriter fileWriter = new FileWriter (file,bandera);
                 try (PrintWriter printWriter  = new PrintWriter(fileWriter)){
-                        printWriter.println(mensaje);
+                        printWriter.print(mensaje);
                         printWriter.close();
                         JOptionPane.showMessageDialog(viewbloc,"Se modificó correctamente");
             }
